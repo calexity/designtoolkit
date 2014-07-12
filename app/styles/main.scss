@@ -1,0 +1,101 @@
+@import 'reset';
+
+$linkcolor: #2EB8B8;
+$highlight: #EAF8F8;
+
+body {
+  font-family: 'Dosis', 'Arial', sans-serif;
+}
+/* We like off-black for text. */
+body, select, input, textarea {
+  color: #333;
+}
+.wrapper {
+  height: 100vh;
+}
+a {
+  color: $linkcolor;
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  color: #FF0066;
+}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: $linkcolor; color: #fff; text-shadow: none;}
+::selection {background: $linkcolor; color: #fff; text-shadow: none;}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: $linkcolor;}
+
+ins {background-color: $linkcolor; color: #000; text-decoration: none;}
+mark {background-color: $linkcolor;color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+/* Custom Styles */
+
+.imgcard {
+  padding: 5em;
+}
+#intro, #core, #validateprob, #patterns, #dontknow {
+  background: #ffffff;
+}
+#values, #kickoff, #validatesol, #standards, #code {
+  background:  $highlight;
+}
+h1 {
+  font-size: 8em;
+  font-weight: 800;
+}
+h2 {
+  font-size: 3.5em;
+  font-weight: 600;
+}
+h3, li {
+  font-size: 1.75em;
+}
+p {
+  font-size: 1.1em;
+  font-family: 'Droid Serif', 'serif';
+  line-height: 150%;
+}
+footer {
+  padding: 1em 5em;
+  float: right;
+}
+footer p {
+  font-size: .9em;
+  font-weight: 800;
+}
+.underline {
+  border-bottom: 4px  solid $linkcolor;
+  font-weight: 600;
+}
+
+
+
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+/*@media (min-width: 967px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 966px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
+  .imgcard {
+    padding: 3em;
+  }
+}*/
